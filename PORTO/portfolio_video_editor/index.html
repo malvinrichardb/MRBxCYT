@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio video editor dan content creator.">
+  <title>Portofolio | Video Editor & Content Creator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Kembali ke beranda">PORTO<span>+</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="navMenu">
+      <a href="#home" data-i18n="navHome">Beranda</a>
+      <a href="#about" data-i18n="navAbout">Tentang</a>
+      <a href="#projects" data-i18n="navProjects">Proyek</a>
+      <a href="#contact" data-i18n="navContact">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="languageToggle" aria-label="Change language">EN</button>
+      <button class="icon-button theme-toggle" id="themeToggle" aria-label="Ganti tema">☼</button>
+      <a class="header-cta" href="#contact" data-i18n="letsTalk">Hubungi Saya ↘</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="available">TERBUKA UNTUK PROYEK BARU</span></p>
+        <h1 data-i18n="heroTitle">Mengubah ide menjadi <span class="gradient-text">cerita visual.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Saya seorang video editor dan content creator yang suka membuat konten terasa hidup melalui visual, ritme, dan cerita.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects" data-i18n="seeWork">Lihat Karya Saya <span>↘</span></a>
+          <a class="button button-secondary" href="#contact" data-i18n="contactMe">Mari Terhubung</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>01<span>+</span></strong><small data-i18n="yearsLabel">Kreativitas tanpa batas</small></div>
+          <div><strong>15<span>+</span></strong><small data-i18n="projectsLabel">Proyek kreatif</small></div>
+          <div><strong>100<span>%</span></strong><small data-i18n="dedicationLabel">Dedikasi</small></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="visual-frame">
+          <div class="frame-top"><span>CREATIVE PLAYGROUND</span><span class="live-label">● LIVE</span></div>
+          <div class="visual-art">
+            <div class="art-ring ring-a"></div><div class="art-ring ring-b"></div>
+            <div class="art-shape shape-a"></div><div class="art-shape shape-b"></div>
+            <div class="art-center"><span>PLAY</span><b>▶</b></div>
+            <span class="art-index">FRAME_001</span><span class="art-caption">MAKE IT<br>MATTER.</span>
+          </div>
+          <div class="timeline"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><i>00:24 / 01:30</i></div>
+        </div>
+        <div class="floating-tag tag-top">✦ Visual storytelling</div>
+        <div class="floating-tag tag-bottom">EDIT • CREATE • REPEAT</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span><small data-i18n="scroll">GULIR UNTUK MENJELAJAH</small></a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading reveal"><p class="eyebrow">01 / <span data-i18n="aboutEyebrow">TENTANG SAYA</span></p><h2 data-i18n="aboutTitle">Kreativitas bertemu <span class="gradient-text">strategi.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal"><p data-i18n="aboutText">Bagi saya, editing bukan sekadar menyusun klip. Ini tentang menemukan momen, membangun suasana, dan menyampaikan pesan yang mudah diingat.</p><p data-i18n="aboutText2">Saya senang bereksperimen dengan transisi, color grading, motion, dan format konten yang sesuai dengan audiens.</p><a class="text-link" href="#contact" data-i18n="workTogether">Punya ide? Mari berkolaborasi ↗</a></div>
+        <div class="skills reveal reveal-delay">
+          <div class="skill"><div class="skill-label"><span>Video Editing</span><span>90%</span></div><div class="skill-track"><span style="--level:85%"></span></div></div>
+          <div class="skill"><div class="skill-label"><span>Content Creation</span><span>85%</span></div><div class="skill-track"><span style="--level:80%"></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading reveal"><p class="eyebrow">02 / <span data-i18n="selectedWork">KARYA PILIHAN</span></p><h2 data-i18n="projectsTitle">Proyek yang berbicara <span class="gradient-text">sendiri.</span></h2><p class="section-subtitle" data-i18n="projectsSubtitle">Beberapa contoh karya. Ganti dengan proyek asli milikmu.</p></div>
+      <div class="project-filters reveal" role="group" aria-label="Filter proyek">
+        <button class="filter-button active" data-filter="all" data-i18n="filterAll">Semua</button>
+        <button class="filter-button" data-filter="video" data-i18n="filterVideo">Video Editing</button>
+        <button class="filter-button" data-filter="social" data-i18n="filterSocial">Konten Sosial</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="video">
+          <a class="project-image project-image-one" href="#contact" aria-label="Tanyakan tentang proyek Cinematic Journey"><span class="project-number">01</span><span class="play-icon">▶</span><span class="image-title">CINEMATIC<br>JOURNEY</span></a>
+          <div class="project-info"><div><h3>YouTube Content</h3><p data-i18n="projectOne">Video youtube · Game edit</p></div><a href="#contact" class="project-arrow" aria-label="Tanya proyek ini">↗</a></div>
+        </article>
+        <article class="project-card reveal reveal-delay" data-category="social">
+          <a class="project-image project-image-two" href="#contact" aria-label="Tanyakan tentang proyek Daily Stories"><span class="project-number">02</span><span class="play-icon">▶</span><span class="image-title">DAILY<br>STORIES</span></a>
+          <div class="project-info"><div><h3>Daily Stories</h3><p data-i18n="projectTwo">Reels & Shorts · Konten sosial</p></div><a href="#contact" class="project-arrow" aria-label="Tanya proyek ini">↗</a></div>
+        </article>
+      </div>
+      <p class="portfolio-note" data-i18n="portfolioNote">Catatan: kartu ini masih contoh desain. Ganti judul, gambar, dan tautan dengan portofolio asli kamu.</p>
+    </section>
+
+    <section class="marquee-section" aria-label="Creative words"><div class="marquee-track"><span>CREATE WITH PURPOSE ✳ EDIT WITH FEELING ✳ TELL YOUR STORY ✳ </span><span>CREATE WITH PURPOSE ✳ EDIT WITH FEELING ✳ TELL YOUR STORY ✳ </span></div></section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal"><p class="eyebrow">03 / <span data-i18n="contactEyebrow">MULAI SESUATU</span></p><h2 data-i18n="contactTitle">Punya cerita untuk <span class="gradient-text">dibuat?</span></h2><p data-i18n="contactText">Mari wujudkan ide kamu menjadi konten yang menarik dan berkesan.</p><a class="button button-primary contact-button" href="mailto:emailkamu@example.com"><span data-i18n="emailMe">Kirim Email</span> <span>↗</span></a>
+        <div class="social-links"><a href="https://www.instagram.com/v1nz_rb/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@creperyt_3" target="_blank" rel="noreferrer">TikTok ↗</a><a href="https://www.youtube.com/@CreeperYoutube1510" target="_blank" rel="noreferrer">YouTube ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><a class="logo" href="#home">PORTO<span>+</span></a><p data-i18n="footerText">Dibuat dengan kreativitas dan banyak kopi.</p><span>© <span id="year"></span> — <span data-i18n="rights">Hak cipta dilindungi.</span></span></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">↑</button>
+</body>
+</html>
